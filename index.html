@@ -1,85 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Company - Customer Service Experts</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #0b0b0b;
-            color: #f0f0f0;
-        }
-        header {
-            background-color: #6a0dad;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(106, 13, 173, 0.6);
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #6a0dad;
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 8px;
-            margin-top: 20px;
-            box-shadow: 0 0 10px #6a0dad;
-            transition: background-color 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #4b007c;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #1a1a1a;
-            color: #aaa;
-        }
-        ul {
-            list-style: disc;
-            padding-left: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Called – Customer Service Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0b0b0b;
+      color: #f0f0f0;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #f0f0f0;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #a362ea;
+    }
+    header {
+      background: #6a0dad;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(106, 13, 173, 0.6);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      color: #a362ea;
+      font-size: 1.8rem;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #6a0dad;
+      color: white;
+      padding: 14px 28px;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px #6a0dad;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #4b007c;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1a1a1a;
+      color: #aaa;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to Your Customer Service Hub</h1>
-        <p>We connect companies with top-notch customer service talents</p>
-    </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="careers.html">Careers</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section>
-        <h2>About Us</h2>
-        <p>We specialize in recruiting and training customer service professionals that deliver exceptional client support. Whether you're a business looking to hire or a talent seeking opportunities, we’ve got you covered!</p>
-    </section>
+  <header>
+    <h1>Called</h1>
+    <p>We connect businesses with top-tier customer service experts.</p>
+  </header>
 
-    <section>
-        <h2>Our Services</h2>
-        <ul>
-            <li>Customer service recruitment</li>
-            <li>Training & development</li>
-            <li>Client support setup for businesses</li>
-        </ul>
-    </section>
+  <section id="about">
+    <h2>Who We Are</h2>
+    <p>At <strong>Called</strong>, we connect businesses with highly-skilled customer service professionals who elevate client experience and build lasting impressions. Whether you're a company in need of support or a talent ready to serve, we’re your bridge to excellence.</p>
+  </section>
 
-    <section>
-        <h2>Let’s Talk</h2>
-        <p>Ready to hire or get hired? Hit the button below!</p>
-        <a href="mailto:darkenterprise878@gmail.com" class="btn">Contact Me</a>
-    </section>
+  <section id="services">
+    <h2>What We Offer</h2>
+    <ul>
+      <li>Live Chat Support</li>
+      <li>Virtual Customer Service Agents</li>
+      <li>Email & Ticket Support Handling</li>
+      <li>Customer Experience Training</li>
+      <li>24/7 Client Support Staffing</li>
+      <li>Help Desk Setup & Management</li>
+      <li>Customer Feedback & Analytics</li>
+    </ul>
+  </section>
 
-    <footer>
-        &copy; 2025 Your Company Name. All rights reserved.
-    </footer>
+  <section id="contact">
+    <h2>Join or Hire</h2>
+    <p>Ready to build your team or become part of ours? Reach us directly through:</p>
+    <a href="https://wa.me/2347010650967" class="btn">Chat on WhatsApp</a>
+    <a href="mailto:darkenterprise878@gmail.com" class="btn" style="margin-left: 10px;">Send Your CV</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Called. All rights reserved.
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+        if (top < triggerBottom) section.classList.add("show");
+      });
+    };
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+  </script>
 
 </body>
 </html>
+
